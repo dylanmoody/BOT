@@ -2,16 +2,31 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>BOT</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <form id="shippingValues">
+      <input type="text" id="email" name="email" placeholder="Email"/><br>
+      <input type="text" id="first name" name="first name" placeholder="First Name"/><br>
+      <input type="text" id="last name" name="last name" placeholder="Last Name"/><br>
+      <input type="text" id="address1" name="address1" placeholder="Address Line 1"/><br>
+      <input type="text" id="address2" name="address2" placeholder="Address Line 2"/><br>
+      <input type="text" id="city" name="city" placeholder="City"/><br>
+      <input type="text" id="state" name="state" placeholder="State"/><br>
+      <input type="text" id="zip" name="zip" placeholder="Zip Code"/><br>
+      <input type="text" id="phone" name="phone" placeholder="Phone Number"/><br>
+      <input type="submit" id="shippingValuesSubmit" value="RUN BOT BOT RUN GO :D"/>
+    </form>
+    <script>
+
+      document.getElementById("shippingValues").onsubmit = a => {
+        a.preventDefault();
+        // document.getElementById("shippingValuesSubmit").value = "Submitted!";
+        console.log(document.getElementById('shippingValues'));
+        return false;
+      }
+    </script>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
