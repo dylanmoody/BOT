@@ -1,0 +1,25 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanmoody/BOT.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dylanmoody/BOT/issues"
+  },
+  "homepage": "https://github.com/dylanmoody/BOT#readme",
+  "dependencies": {
+    "dialogs": "^2.0.1",
+    "electron": "^8.2.0",
+    "python-shell": "^1.0.6"
+  }
+}
