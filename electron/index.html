@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>BOT</title>
+
+    <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="home.html">ShopNiceKicks</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">Shipping</a>
+  </li>
+  </ul>
+
   </head>
   <body>
-
+    <br>
+    <br>
     <form id="shippingValues">
       <input type="text" id="email" name="email" placeholder="Email"/><br>
       <input type="text" id="first name" name="first name" placeholder="First Name"/><br>
@@ -17,11 +28,10 @@
       <input type="text" id="state" name="state" placeholder="State"/><br>
       <input type="text" id="zip" name="zip" placeholder="Zip Code"/><br>
       <input type="text" id="phone" name="phone" placeholder="Phone Number"/><br>
-      <!-- <input type="submit" id="shippingValuesSubmit" onclick="passForm()" value="RUN BOT BOT RUN GO :D"/> -->
-      <button type="button" id="shippingValuesSubmit"  onclick="passForm('TEST')" >RUN BOT BOT RUN GO :D</button>
+      <button type="button" id="shippingValuesSubmit"  onclick="passForm(document.getElementById('shippingValues'))" >RUN FORM</button>
     </form>
 
-    
+
     <script src="renderer.js" type="text/javascript">
       // You can also require other files to run in this process
       require('renderer.js')

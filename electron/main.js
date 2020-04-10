@@ -9,7 +9,7 @@ function createWindow () {
   	}
   })
   window.openDevTools()
-  window.loadFile('index.html')
+  window.loadFile('start.html')
 
 }
 app.on('ready', createWindow)

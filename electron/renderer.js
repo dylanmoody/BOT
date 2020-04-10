@@ -1,6 +1,6 @@
 
 // import PythonShell from 'python-shell';
-// 
+//
 // options = {
 //   mode: 'text',
 //   pythonPath : '/usr/bin/python3'
@@ -10,19 +10,19 @@
 var path = require("path")
 // const dialog = require("dialogs")
 
-var options = {
-  // scriptPath : path.join(__dirname, '/../')
-  // pythonPath : path.join(__dirname, "/python3.7.0/python.exe")
-  pythonOptions: ['-u'],
-}
+
 
 // dialogs.alert('okidoki', function (ok) {
 console.log('alert')
 // })
 
-function passForm(a){
+function passForm(shipVals){
   let {PythonShell} = require('python-shell')
-  console.log(a)
+  var options = {
+    pythonOptions: ['-u'],
+    args: [shipVals.elements[1].value],
+  }
+  // console.log(shipVals.elements[1].value)
   PythonShell.run('../hard soup.py',options,function(err,results) {
     if(err) throw err;
     console.log('results: %j', results);
@@ -42,4 +42,3 @@ function passForm(a){
   //   return false;
   // }
 }
-
