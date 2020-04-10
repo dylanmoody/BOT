@@ -2,7 +2,6 @@ import mechanicalsoup
 import sys
 
 
-name = sys.argv[1]
 
 # create stateful browser
 brow = mechanicalsoup.StatefulBrowser()
@@ -11,7 +10,10 @@ shipping_ids = ["checkout_email" ,"checkout_shipping_address_first_name", "check
 									"checkout_shipping_address_city", "checkout_shipping_address_province", "checkout_shipping_address_zip", "checkout_shipping_address_phone" ]
 
 
-shipping_values = ["bobob@bob.com","bob", "BOBOB", "68 Road Lane", "", "Troy", "New York", "12180", "1234567789"]
+product = sys.argv[1:3]
+shipping_values = sys.argv[3:]
+
+# shipping_values = ["bobob@bob.com","bob", "BOBOB", "68 Road Lane", "", "Troy", "New York", "12180", "1234567789"]
 
 
 
@@ -46,7 +48,7 @@ print(brow.get_url())
 brow.select_form(nr=2)
 # brow.get_current_form().print_summary()
 
-print("Used default shipping information for",name,"to arrive at the checkout link.")
+print("Used default shipping information for",shipping_values[0],"to arrive at the checkout link.")
 
 
 sys.stdout.flush()
