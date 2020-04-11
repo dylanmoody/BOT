@@ -31,7 +31,7 @@ function runBot(){
     args: product.concat( shipInfo ),
   }
   // console.log(shipVals.elements[1].value)
-  PythonShell.run('../hard soup.py',options,function(err,results) {
+  PythonShell.run('../soup.py',options,function(err,results) {
     if(err) throw err;
     console.log('results: %j', results);
   })
