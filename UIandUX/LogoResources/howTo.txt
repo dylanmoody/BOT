@@ -1,0 +1,14 @@
+How to edit the logo with the After Effects File
+-------------------------------------------------
+1. Open the After Effects file and make sure everything is link. If errors occur on the left hand side in the project menu double click one of the nulled files and press Locate Media. 
+
+2. Double click the corresponding Adjacent Media 
+
+3. This will link the remaining media as well.
+
+4. The different compositions reflect different sizes iterations.
+
+5. **NEVER EDIT THE BASE LAYER FOR THE LOGO**
+CREATE A COPY IF YOU NEED TO TWEAK.
+
+6. Finally export the media as a JPEG Sequence and make sure the timeline is a single frame so you don't end up creating dozens of photos.
