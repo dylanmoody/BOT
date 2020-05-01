@@ -1,0 +1,17 @@
+How To Use These Files
+------------------------
+1. Open AFter Effects CS6 or Higher. (You might need to convert these files to CC)
+
+2. When opening the files there will be multiple compositions inside. 
+
+3. Most of these layers are locked if you look at the bottom.
+
+4. If you want to edit or make changes unlock the chosen layer.
+
+5. Most of these are color coded so background is always pink so don't uncheck that.
+
+6. Anything that affects future compositions reflects that in the top left hand corner of the screen with the counter. (All of those compositions will be edited if you change it.
+
+7. Have fun with working on the assets.
+
+8. You need to export as JPEG Sequence or PNG Sequcne, don't do anything else or it creates a video.
