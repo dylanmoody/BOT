@@ -4,12 +4,16 @@ function createWindow () {
   window = new BrowserWindow({
   	width: 800,
   	height: 600,
+    show: false,
   	webPreferences: {
   		nodeIntegration: true
   	}
   })
   window.openDevTools()
-  window.loadFile('start.html')
+  window.once('ready-to-show', () => {
+    window.show()
+  })
+  window.loadFile('src/index.html')
 
 }
 app.on('ready', createWindow)
